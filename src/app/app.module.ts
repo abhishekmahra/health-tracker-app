@@ -11,10 +11,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WorkoutTableComponent } from './health-tracker/components/workout-table/workout-table.component';
-import { HealthChartsComponent } from './health-tracker/components/health-charts/health-charts.component';
 import { WorkoutFiltersComponent } from './health-tracker/components/workout-filters/workout-filters.component';
+import { NgChartsModule } from 'ng2-charts';
+import { ChartComponent } from './shared/chart/chart.component';
+import { WorkoutUsersListComponent } from './health-tracker/components/workout-progress/workout-users-list/workout-users-list.component';
+import { WorkoutProgressComponent } from './health-tracker/components/workout-progress/workout-progress.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +25,10 @@ import { WorkoutFiltersComponent } from './health-tracker/components/workout-fil
     HeaderComponent,
     AddWorkoutFormComponent,
     WorkoutTableComponent,
-    HealthChartsComponent,
     WorkoutFiltersComponent,
+    ChartComponent,
+    WorkoutUsersListComponent,
+    WorkoutProgressComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +39,8 @@ import { WorkoutFiltersComponent } from './health-tracker/components/workout-fil
     MatButtonModule,
     ReactiveFormsModule,
     MatPaginatorModule,
+    FormsModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
