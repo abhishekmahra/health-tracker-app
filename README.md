@@ -1,4 +1,8 @@
 # HealthTrackerApp
+### This App is deployed over the following link --> https://angular-healthtrack.netlify.app/
+### Assumptions made : The name should be unique in order to update the user data (to create a new data in locl storage) i.e A new item will never be created in the local storage with same user name.
+
+#### The Workout-progress component and the Health-workout service have gone through 100%success in unit testing.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
