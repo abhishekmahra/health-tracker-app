@@ -13,6 +13,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WorkoutTableComponent } from './health-tracker/components/workout-table/workout-table.component';
+import { HealthChartsComponent } from './health-tracker/components/health-charts/health-charts.component';
+import { WorkoutFiltersComponent } from './health-tracker/components/workout-filters/workout-filters.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { WorkoutTableComponent } from './health-tracker/components/workout-table
     HeaderComponent,
     AddWorkoutFormComponent,
     WorkoutTableComponent,
+    HealthChartsComponent,
+    WorkoutFiltersComponent,
   ],
   imports: [
     BrowserModule,
